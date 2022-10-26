@@ -12,6 +12,6 @@ FROM
         JOIN
     t_dept_emp de ON e.emp_no = de.emp_no
 WHERE
-    tde.from_date >= '1990-01-01'
+    de.from_date >= '1990-01-01'
 GROUP BY year, gender
 ORDER BY year ASC;
